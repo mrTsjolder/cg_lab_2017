@@ -1,6 +1,6 @@
 # Computer Graphics Lab 2017
 
-This repository contains the labs for the course Computer Graphics at the Johannes Kepler University Linz, Austria for the summer term 2016.
+This repository contains the labs for the course Computer Graphics at the Johannes Kepler University Linz, Austria for the summer term 2017.
 
 
 # Staff
