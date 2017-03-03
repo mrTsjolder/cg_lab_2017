@@ -2,9 +2,6 @@
 
 This repository contains the labs for the course Computer Graphics at the Johannes Kepler University Linz, Austria for the summer term 2016.
 
-# Access
-
-https://jku-icg.github.io/cg_lab_2016/
 
 # Staff
  * David Schedl (@schedldave)
