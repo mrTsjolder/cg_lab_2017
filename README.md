@@ -6,7 +6,7 @@ This repository contains the labs for the course Computer Graphics at the Johann
 # Staff
  * David Schedl (@schedldave)
  * Marc Streit (@mstreit)
- * Teaching Assistants: 
+ * Teaching Assistants: Katharina Prinz and Pieter-Jan Hoedt
 
 # Launch
 
