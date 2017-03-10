@@ -1,9 +1,5 @@
 //#############################################################################
-// SNIPPET 1: compile shader and create buffer
-
-//in WebGL/OpenGL3 we have to create and use our own shaders for the programmable pipeline
-//create the shader program
-shaderProgram = createProgram(gl, resources.vs, resources.fs);
+// SNIPPET 1: create buffer
 
 //create a buffer and put a single clipspace rectangle in it (2 triangles)
 buffer = gl.createBuffer();
