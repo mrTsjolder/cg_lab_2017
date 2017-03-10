@@ -28,6 +28,8 @@ function render() {
 
 loadResources({
   //list of all resources that should be loaded as key: path
+  vs: 'shader/empty.vs.glsl',
+  fs: 'shader/empty.fs.glsl'
 }).then(function (resources /*loaded resources*/) {
   init(resources);
   //render one frame
