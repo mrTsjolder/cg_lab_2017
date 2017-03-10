@@ -1,5 +1,9 @@
 //#############################################################################
-// SNIPPET 1: create buffer
+// SNIPPET 1: create shader and buffer
+
+//in WebGL/OpenGL3 we have to create and use our own shaders for the programmable pipeline
+//create the shader program
+shaderProgram = createProgram(gl, resources.vs, resources.fs);
 
 //create a buffer and put a single clipspace rectangle in it (2 triangles)
 buffer = gl.createBuffer();
@@ -16,7 +20,10 @@ const arr = new Float32Array([
 gl.bufferData(gl.ARRAY_BUFFER, arr, gl.STATIC_DRAW);
 
 //#############################################################################
-// SNIPPET 2: use buffer
+// SNIPPET 2: active shader and use buffer
+
+//activate shader program that you have initialized before
+gl.useProgram(shaderProgram);
 
 //we look up the internal location after compilation of the shader program given the name of the attribute
 const positionLocation = gl.getAttribLocation(shaderProgram, 'a_position');
