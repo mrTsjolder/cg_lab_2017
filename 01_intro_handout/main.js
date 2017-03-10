@@ -7,12 +7,8 @@ var gl = null;
 function init(resources) {
   //create a GL context
   gl = createContext(400 /*width*/, 400 /*height*/);
-
-  //in WebGL/OpenGL3 we have to create and use our own shaders for the programmable pipeline
-  //activate the shader program
-  shaderProgram = createProgram(gl, resources.vs, resources.fs);
   
-  //TODO initialize buffers, ...
+  //TODO initialize shader program and buffers, ...
 }
 
 /**
