@@ -7,8 +7,8 @@ var gl = null;
 function init(resources) {
   //create a GL context
   gl = createContext(400 /*width*/, 400 /*height*/);
-  
-  //TODO initialize shader program and buffers, ...
+
+  //TODO initialize shader program and buffers...
 }
 
 /**
