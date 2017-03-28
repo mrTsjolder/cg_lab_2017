@@ -89,6 +89,22 @@ function loadResources(resources, callback) {
     keys.forEach(load);
   });
 }
+
+/**
+ * displays the text given as a parameter on the screen
+ * @param text the text we want to show
+ */
+function displayText(text) {
+  document.getElementById('paragraph').innerText = text;
+}
+
+/**
+ * clears the text on the screen
+ */
+function clearText() {
+  displayText('');
+}
+
 /**
  * creates a WebGLRenderingContext along with a canvas to render to
  * @param width
@@ -100,8 +116,23 @@ function createContext(width, height) {
   canvas.width = width || 400;
   canvas.height = height || 400;
   document.body.appendChild(canvas);
+  createHtmlText(canvas)
   return canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
 }
+
+/**
+ * creates a html-paragraph for displaying text on screen
+ * @param canvas the canvas the paragraph will be placed upon
+ */
+function createHtmlText(canvas) {
+  var par = document.createElement('p');
+  par.id = 'paragraph';
+  par.style.width = canvas.clientWidth + 'px';
+  var text = document.createTextNode('');
+  par.appendChild(text);
+  document.body.appendChild(par);
+}
+
 /**
  * creates a shader of the given type with the given code
  * @param gl GL context
