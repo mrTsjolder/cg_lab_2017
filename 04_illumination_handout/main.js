@@ -47,7 +47,7 @@ function createSceneGraph(gl, resources) {
   }
 
   {
-    //TASK 3-6 create white light node at [0, -2, 2]
+    //TASK 3-6 create white light node at [0, 2, 2]
     //TASK 4-1 animated light using rotateLight transformation node
   }
 
